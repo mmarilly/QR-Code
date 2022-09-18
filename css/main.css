@@ -1,0 +1,81 @@
+/*----------- VARIABLE -----------
+---------------------------------*/
+:root {
+  --color__white: hsl(0, 0%, 100%);
+  --color__Lightgray: hsl(212, 45%, 89%);
+  --color__Grayishblue: hsl(220, 15%, 55%);
+  --color__Darkblue: hsl(218, 44%, 22%);
+}
+
+/*----------- GENERAL -----------
+---------------------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*----------- CONTAINER -----------
+---------------------------------*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: var(--color__Lightgray);
+}
+
+.container__centered {
+  width: 320px;
+  height: 500px;
+  padding: 15px;
+  background-color: var(--color__white);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.main__top img {
+  border-radius: 10px;
+}
+
+.main__bottom {
+  margin-top: 25px;
+  padding: 0 20px;
+}
+
+.main__bottom h1 {
+  max-width: 250px;
+  color: var(--color__Darkblue);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.1;
+  letter-spacing: -0.015rem;
+  margin-bottom: 20px;
+}
+
+.main__bottom p {
+  text-align: center;
+  line-height: 1.3;
+}
